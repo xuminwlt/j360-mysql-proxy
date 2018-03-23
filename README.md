@@ -1,5 +1,7 @@
 Simple Mysql Proxy For Java
 
+模拟Mysql代理服务器, 后期可用于分表分库代理, 类似于MyCat
+
 ## 运行Proxy代理服务器
 
 1. 配置DataSourceManager
