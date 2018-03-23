@@ -18,6 +18,9 @@ public final class DataSourceManager {
     public DataSourceManager() {
         Properties p = new Properties();
         try {
+            p.setProperty("url","jdbc:mysql://localhost:3306/us2?setUnicode=true&amp;characterEncoding=UTF8");
+            p.setProperty("username","root");
+            p.setProperty("password","root");
             dataSource = DruidDataSourceFactory.createDataSource(p);
         } catch (Exception e) {
             throw new RuntimeException();
