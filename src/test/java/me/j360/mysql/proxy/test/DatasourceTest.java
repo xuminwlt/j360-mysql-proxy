@@ -1,6 +1,7 @@
 package me.j360.mysql.proxy.test;
 
 import me.j360.mysql.proxy.DataSourceManager;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.sql.SQLException;
@@ -18,7 +19,7 @@ public class DatasourceTest {
     public void druidTest() throws SQLException {
         DataSourceManager dataSourceManager = new DataSourceManager();
 
-        System.out.println(dataSourceManager.getDataSource().getConnection().toString());
+        Assert.assertNotNull(dataSourceManager.getDataSource().getConnection());
     }
 
 }
